@@ -1,0 +1,168 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+.social {
+    list-style-type: none;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+.social-link {
+    display: inline;
+    margin: .5em 0 .5em .5em;
+}
+[class*="entypo-"]:before {
+    font-family: "entypo", sans-serif;
+}
+/* default */
+
+html {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+body {
+    color: #515151;
+    background-color: #fff;
+}
+a {
+    color: #00D2D6;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #313131;
+}
+strong {
+    color: #303030;
+}
+@media (min-width: 48rem) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (min-width: 58rem) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* sidebar */
+
+.sidebar {
+    text-align: right;
+    padding: 2rem 1rem;
+    color: #333333;
+    background-color: white;
+}
+.site-title {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #ACACAC;
+    margin-top: 2rem;
+}
+.sidebar-section {
+    font-size: .875em;
+    text-align: right;
+    color: #666;
+    margin-top: 2.5rem;
+}
+.site-title a, .sidebar-link a {
+    color: #00D2D6;
+}
+.sidebar-links {
+    margin-bottom: 12px;
+    padding-left: 0;
+}
+.sidebar-link {
+    padding: .5em 0 .5em .5em;
+    display: inline;
+}
+.sidebar-link-text {
+    font-weight: 700;
+}
+.sidebar-copyright {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
+@media (max-width: 48rem) {
+    .sidebar {
+        text-align: center;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .sidebar-section {
+        display: none;
+    }
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    font-size: .9em;
+}
+.footer-links {
+    margin-bottom: 12px;
+    padding-left: 0;
+}
+.footer-link {
+    padding: 12px;
+    display: inline;
+}
+.footer-link-text {
+    font-weight: 700;
+}
+.footer-copyright {
+    margin: 3rem 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+/* content */
+
+.post-snippet {
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 1.125rem;
+}
+
+.page-title,
+.post-title {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #333;
+}
+.post-date {
+    font-size: .75em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: #cbcbcb;
+    margin-bottom: 20px;
+}
+/* pagination */
+
+.pagination-item.newer {
+    float: right;
+}
+
+.read-more {
+    font-family: "Merriweather", Georgia, serif;
+    margin-left: .25rem;
+    font-size: .75rem;
+}
+
+.pagination {
+    color: #ccc;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: .8rem;
+    margin-top: 2rem;
+}
+a.pagination-item {
+    color: black;
+}
+.pagination-item.older {
+    float: left;
+    text-align: left;
+}
+.pagination-item.newer {
+    float: right;
+    text-align: right;
+}
