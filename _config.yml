@@ -1,0 +1,22 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        date
+
+# Disqus
+disqus:
+    shortname: 'carolinabigonha'
+
+# Setup
+title:            Carolina Bigonha
+url:              http://carolinabigonha.com
+tagline: 		  'My personal blog.'
+description: 	  'Data analysis and visualization enthusiast; software engineer and co-founder at <a href="http://www.zahpee.com">zahpee</a>.'
+paginate:         5
+baseurl:          /
+author:
+  name:           Carolina Bigonha
+  url:            https://twitter.com/carolinabigonha
+  email:          carolinabigonha@gmail.com
