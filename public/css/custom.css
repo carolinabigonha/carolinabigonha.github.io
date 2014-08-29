@@ -1,5 +1,5 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-.social {
+ .social {
     list-style-type: none;
     margin: 0 0 1rem 0;
     padding: 0;
@@ -39,12 +39,10 @@ strong {
         font-size: 16px;
     }
 }
-
 .main {
     max-width: 960px;
     margin: 0 auto;
 }
-
 /* sidebar */
 
 .sidebar {
@@ -85,7 +83,6 @@ strong {
     font-size: 12px;
     color: #aaa;
 }
-
 @media (max-width: 48rem) {
     .sidebar {
         text-align: center;
@@ -95,7 +92,6 @@ strong {
         display: none;
     }
 }
-
 /* footer */
 
 .footer {
@@ -125,9 +121,7 @@ strong {
     border-bottom: 1px solid #EEEEEE;
     margin-bottom: 1.125rem;
 }
-
-.page-title,
-.post-title {
+.page-title, .post-title {
     font-family: "Merriweather", Georgia, serif;
     font-size: 1.5em;
     font-weight: 300;
@@ -142,18 +136,24 @@ strong {
     color: #cbcbcb;
     margin-bottom: 20px;
 }
+.post-introduction {
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.75em;
+    padding: 1.5em 0;
+}
+
 /* pagination */
 
 .pagination-item.newer {
     float: right;
 }
-
 .read-more {
     font-family: "Merriweather", Georgia, serif;
     margin-left: .25rem;
     font-size: .75rem;
 }
-
 .pagination {
     color: #ccc;
     font-family: "Merriweather", Georgia, serif;

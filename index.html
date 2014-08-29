@@ -12,7 +12,9 @@ title: Home
       </a>
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
-      <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="read-more" href="{{ post.url }}">read more &#8594;</a></p>
+      <p> {{ post.introduction }} <a class="read-more" href="{{ post.url }}">read more &#8594;</a></p>
+      <!-- <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="read-more" href="{{ post.url }}">read more &#8594;</a></p> -->
+
   </div>
   {% endfor %}
 </div>
