@@ -1,16 +1,33 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
- .social {
+.social {
     list-style-type: none;
-    margin: 0 0 1rem 0;
+    margin: 2.5rem 0 1rem 0;
     padding: 0;
 }
-.social-link {
+.social-item {
     display: inline;
-    margin: .5em 0 .5em .5em;
 }
-[class*="entypo-"]:before {
-    font-family: "entypo", sans-serif;
+.social-link {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
 }
+
+.social-link.twitter {
+    background: url('../images/twitter.png') no-repeat;
+}
+.social-link.linkedin {
+    background: url('../images/linkedin.png') no-repeat;
+}
+.social-link.speakerdeck {
+    background: url('../images/speakerdeck.png') no-repeat;
+}
+.social-link.github {
+    background: url('../images/github.png') no-repeat;
+}
+.social-link.rss {
+    background: url('../images/rss.png') no-repeat;
+}
+
 /* default */
 
 html {
@@ -21,13 +38,16 @@ body {
     background-color: #fff;
 }
 a {
-    color: #00D2D6;
+    color: #2884C2;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #313131;
+    color: #000000;
+}
+h2 {
+    font-size: 1.35rem;
 }
 strong {
-    color: #303030;
+    color: #000000;
 }
 @media (min-width: 48rem) {
     html {
@@ -36,7 +56,8 @@ strong {
 }
 @media (min-width: 58rem) {
     html {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.5rem;
     }
 }
 .main {
@@ -55,7 +76,7 @@ strong {
     font-family: "Merriweather", Georgia, serif;
     font-size: 1.5em;
     font-weight: 100;
-    color: #ACACAC;
+    color: #000000;
     margin-top: 2rem;
 }
 .sidebar-section {
@@ -65,7 +86,7 @@ strong {
     margin-top: 2.5rem;
 }
 .site-title a, .sidebar-link a {
-    color: #00D2D6;
+    color: #000000;
 }
 .sidebar-links {
     margin-bottom: 12px;
@@ -139,7 +160,6 @@ strong {
 .post-introduction {
     font-family: "Merriweather", Georgia, serif;
     font-style: italic;
-    font-size: 1.1em;
     line-height: 1.75em;
     padding: 1.5em 0;
 }
@@ -170,4 +190,9 @@ a.pagination-item {
 .pagination-item.newer {
     float: right;
     text-align: right;
+}
+
+.caption {
+font-size: .8rem;
+font-style: italic;
 }
