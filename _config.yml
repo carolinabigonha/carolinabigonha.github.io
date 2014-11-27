@@ -12,8 +12,8 @@ disqus:
 # Setup
 title:            Carolina Bigonha
 url:              http://carolinabigonha.com
-tagline: 		  'My personal blog.'
-description: 	  'Data analysis and visualization enthusiast; software engineer and co-founder at <a href="http://www.zahpee.com">zahpee</a>.'
+tagline: 		  'Carolina Bigonha | Blog.'
+description: 	  'Co-fundadora da <a href="http://www.zahpee.com">zahpee</a>.'
 paginate:         5
 baseurl:          /
 author:

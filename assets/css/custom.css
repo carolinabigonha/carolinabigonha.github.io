@@ -4,22 +4,24 @@
     padding: 0;
 }
 .social-item {
-    display: inline;
+    line-height: 1em;
+    display: inline-block;
+    background-color: #515151;
 }
 .social-link {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
+    margin: 2px 2px 0 2px;
 }
-
 .social-link.twitter {
     background: url('../images/twitter.png') no-repeat;
 }
 .social-link.linkedin {
     background: url('../images/linkedin.png') no-repeat;
 }
-.social-link.speakerdeck {
-    background: url('../images/speakerdeck.png') no-repeat;
+.social-link.last-fm {
+    background: url('../images/last-fm.png') no-repeat;
 }
 .social-link.github {
     background: url('../images/github.png') no-repeat;
@@ -195,4 +197,8 @@ a.pagination-item {
 .caption {
 font-size: .8rem;
 font-style: italic;
+}
+
+.about-text {
+    margin-top: 2em;
 }
