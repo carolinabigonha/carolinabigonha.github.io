@@ -5,6 +5,9 @@ highlighter:      pygments
 # Permalinks
 permalink:        date
 
+# Optional features
+show_related_posts: true
+
 # Disqus
 disqus:
     shortname: 'carolinabigonha'
@@ -12,8 +15,8 @@ disqus:
 # Setup
 title:            Carolina Bigonha
 url:              http://carolinabigonha.com
-tagline: 		  'Carolina Bigonha | Blog.'
-description: 	  'Co-fundadora da <a href="http://www.zahpee.com">zahpee</a>.'
+tagline: 		  ' | Blog'
+description: 	  'Co-fundadora e Product Onwer da <a href="http://zahpee.com">zahpee</a>.'
 paginate:         5
 baseurl:          /
 author:

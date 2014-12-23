@@ -2,12 +2,41 @@
 layout: default
 ---
 
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+
 <div class="post">
+
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span><br>
+  {% if page.update_date %}
+    <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
+  }
+  }
+  {% endif %}
+
   <p class="post-introduction">{{ page.introduction }}</p>
   {{ content }}
 
 </div>
 
+<div class="related-posts">
+
+{% if site.show_related_posts %}
+  <h3 class="related-posts-title">Read next</h3>
+  {% for post in site.related_posts %}
+    <div class="related-post">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+        <h4 class="post-title">{{ post.title }}</h4>
+        <p class="post-snippet-introduction">{{ post.introduction }}</p>
+      </a>
+    </div>
+  {% endfor %}
+{% endif %}
+
+</div>
+
 {% include disqus.html %}
+

@@ -1,35 +1,23 @@
 .social {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #CCC;
     list-style-type: none;
-    margin: 2.5rem 0 1rem 0;
-    padding: 0;
+    margin: 1.5rem 0;
+    padding: .725rem 0;
 }
 .social-item {
+    padding: 0 .4rem;
     line-height: 1em;
-    display: inline-block;
-    background-color: #515151;
+    display: inline-block
 }
 .social-link {
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin: 2px 2px 0 2px;
-}
-.social-link.twitter {
-    background: url('../images/twitter.png') no-repeat;
-}
-.social-link.linkedin {
-    background: url('../images/linkedin.png') no-repeat;
-}
-.social-link.last-fm {
-    background: url('../images/last-fm.png') no-repeat;
-}
-.social-link.github {
-    background: url('../images/github.png') no-repeat;
+    width: 24px;
+    height: 24px;
 }
 .social-link.rss {
     background: url('../images/rss.png') no-repeat;
 }
-
 /* default */
 
 html {
@@ -82,10 +70,12 @@ strong {
     margin-top: 2rem;
 }
 .sidebar-section {
+    border-top: 1px solid #eaeaea;
     font-size: .875em;
     text-align: right;
     color: #666;
     margin-top: 2.5rem;
+    padding: 1rem .725rem;
 }
 .site-title a, .sidebar-link a {
     color: #000000;
@@ -151,7 +141,7 @@ strong {
     line-height: 1.5em;
     color: #333;
 }
-.post-date {
+.related-posts-title, .post-meta {
     font-size: .75em;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -165,7 +155,9 @@ strong {
     line-height: 1.75em;
     padding: 1.5em 0;
 }
-
+.post-snippet-introduction {
+    padding: 1.5rem 0 .5rem 0;
+}
 /* pagination */
 
 .pagination-item.newer {
@@ -193,12 +185,42 @@ a.pagination-item {
     float: right;
     text-align: right;
 }
-
 .caption {
-font-size: .8rem;
-font-style: italic;
+    font-size: .8rem;
+    font-style: italic;
 }
-
 .about-text {
     margin-top: 2em;
+}
+.related-posts {
+    background-color: #FAFAFA;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    list-style: none;
+    margin-bottom: 3rem;
+}
+.related-post {
+    border-top: 1px solid #ccc;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+.related-posts h3 {
+    margin-top: 0;
+}
+.related-post .post-snippet-introduction {
+    font-size: .875rem;
+    padding: 0;
+    /* color: #666; */
+}
+.related-post a {
+    color: #333;
+}
+.related-post a:hover {
+    text-decoration: none;
+}
+.related-post:nth-child(2) {
+    border-top: none;
+}
+.related-post .post-title {
+    font-size: 1.125rem;
 }
