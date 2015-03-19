@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+{% include head.html %}
+
+<body>
+
+	<div class="main">
+
+	    {% include sidebar.html %}
+	    <div class="content container">
+	        {{ content }}
+	    {% include footer.html %}
+	    </div>
+
+    </div>
+
+</body>
+
+{% include google_analytics.html %}
+
+</html>

@@ -1,25 +1,23 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# Site settings
+title: Blog
+email: carolinabigonha@gmail.com
+description: Conversando sobre produto.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+enable_retina: false
+permalink: :title
+# nav_list:
+#   Home : ['Home', '/', 'fa-home']
+#   Home_Alt : ['Home Alt', '/home-alt', 'fa-home']
+#   Home_Alt_2 : ['Home Alt 2', '/home-alt-2/', 'fa-home']
+#   About : ['About', '/about', 'fa-anchor']
+#   Contact : ['Contact', '/contact', 'fa-plane']
+#   Author : ['Author', '/author/michelle', 'fa-user']
+single_footer: '<p>Carolina Bigonha &copy; 2015 <a href="/">últimos posts</a></p>'
+footer_links:
+    About: ['About', '/about']
+    Contact: ['Contact', '/contact']
 
-# Permalinks
-permalink:        date
 
-# Optional features
-show_related_posts: true
-
-# Disqus
-disqus:
-    shortname: 'carolinabigonha'
-
-# Setup
-title:            Carolina Bigonha
-url:              http://carolinabigonha.com
-tagline: 		  ' | Blog'
-description: 	  'Co-fundadora e Product Onwer da <a href="http://zahpee.com">zahpee</a>.'
-paginate:         5
-baseurl:          /
-author:
-  name:           Carolina Bigonha
-  url:            https://twitter.com/carolinabigonha
-  email:          carolinabigonha@gmail.com
+# Build settings
+markdown: kramdown

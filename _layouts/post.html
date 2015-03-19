@@ -2,41 +2,34 @@
 layout: default
 ---
 
-{% assign minutes = content | number_of_words | divided_by: 180 %}
-{% if minutes == 0 %}
-{% assign minutes = 1 %}
-{% endif %}
+<header class="hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}}.jpg);">
 
-<div class="post">
+    <span class"go-home"><a href="/"> Carolina Bigonha</a></span>
 
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span><br>
-  {% if page.update_date %}
-    <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
-  }
-  }
-  {% endif %}
+</header>
 
-  <p class="post-introduction">{{ page.introduction }}</p>
-  {{ content }}
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name | capitalize}}</a> in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories[0] | capitalize }}</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ page.read_time }} minutes
+            </p>
 
-</div>
+            <h1>{{ page.title }}</h1>
 
-<div class="related-posts">
+            {{ content }}
 
-{% if site.show_related_posts %}
-  <h3 class="related-posts-title">Read next</h3>
-  {% for post in site.related_posts %}
-    <div class="related-post">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-        <h4 class="post-title">{{ post.title }}</h4>
-        <p class="post-snippet-introduction">{{ post.introduction }}</p>
-      </a>
-    </div>
-  {% endfor %}
-{% endif %}
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
 
-</div>
+</main> <!-- /container -->
 
-{% include disqus.html %}
+<footer class="single">
+    {% include footer-single.html %}
+
+    {% if page.show_related_posts == true %}
+        {% include footer-related-posts.html %}
+    {% endif %}
+</footer>
+
 
