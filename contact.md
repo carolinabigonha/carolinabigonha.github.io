@@ -1,8 +1,8 @@
 ---
 layout: contact
-title: contact
+title: Contato
 permalink: /contact/
-feature_image: feature-laptop
+feature_image: feature-contact
 form_action:
-form_heading: Contact our Team
+form_heading: Quer dizer algo?
 ---

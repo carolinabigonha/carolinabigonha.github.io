@@ -1,7 +1,23 @@
 ---
-layout: with-sidebar
+layout: default
 ---
 
-<h3>{{ page.form_heading }}</h3>
+<header class="hero-image" style='background-image: url({{"/img/" | append: page.feature_image | prepend: site.baseurl }}.jpg);'>
 
-{% include contact-form.html %}
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+
+            <h1>{{ page.title }}</h1>
+ 
+            {% include contact-form.html %}
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+{% include footer-page.html %}
+
