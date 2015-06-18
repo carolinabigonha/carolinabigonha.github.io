@@ -13,10 +13,10 @@ permalink: :title
 #   About : ['About', '/about', 'fa-anchor']
 #   Contact : ['Contact', '/contact', 'fa-plane']
 #   Author : ['Author', '/author/michelle', 'fa-user']
-single_footer: '<p>Carolina Bigonha &copy; 2015 <a href="/">últimos posts</a></p>'
+single_footer: '<p>Carolina Bigonha &copy; 2015 | <a href="/">Veja os últimos posts</a></p>'
 footer_links:
-    About: ['About', '/about']
-    Contact: ['Contact', '/contact']
+    About: ['Sobre', '/about']
+    Contact: ['Contato', '/contact']
 
 
 # Build settings
