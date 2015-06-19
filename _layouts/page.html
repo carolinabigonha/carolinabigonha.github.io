@@ -2,8 +2,12 @@
 layout: default
 ---
 
+<div class="go-home">
+    <div class="container">
+    <a href="/">HOME</a>
+    </div>
+</div>
 <header class="hero-image" style='background-image: url({{"/img/" | append: page.feature_image | prepend: site.baseurl }}.jpg);'>
-
 </header>
 
 <main class="container">
@@ -13,6 +17,8 @@ layout: default
             <h1>{{ page.title }}</h1>
 
             {{ content }}
+
+            </div>
 
         </div><!-- main-content/col -->
     </div> <!--/row -->

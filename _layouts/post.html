@@ -4,7 +4,7 @@ layout: default
 
 <div class="go-home">
     <div class="container">
-    <a href="/"> Carolina Bigonha</a>
+    <a href="/">HOME</a>
     </div>
 </div>
 <header class="hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}}.jpg);">
@@ -20,6 +20,8 @@ layout: default
             <h1>{{ page.title }}</h1>
 
             {{ content }}
+
+            <p class="meta">Post publicado em <span>{{ page.date | date: "%b %-d, %Y" }}</span> na categoria <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize }}</a> no blog <a href="carolinabigonha.com">carolinabigonha.com</a></p>
 
         </div><!-- main-content/col -->
     </div> <!--/row -->

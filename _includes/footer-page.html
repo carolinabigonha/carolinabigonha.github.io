@@ -1,7 +1,26 @@
 <footer class="single single-page without-readmore">
     <div class="container">
-        <div class="col-sm-12">
-            {{ site.single_footer }}
-        </div>
-    </div>
+	    <div class="row">
+	        <div class="col-xs-12 col-sm-8">
+	            <div class="footer-links">
+	                <p><a href="/about">Sobre</a> . <a href="/contact">Contato</a> . <a href="/">Leia os últimos posts</a></p>
+	            </div>
+	            <div class="copyright">
+	                <p>Copyright &copy; 2015 Carolina Bigonha</p>
+	            </div>
+
+	        </div><!-- end col -->
+	        <div class="col-xs-12 col-sm-4">
+	            <div class="social">
+	                <p>Gostou? Compartilhe!</a>
+	                <div class="social-links">
+	                    <a class="social-icon" href="#" data-platform="twitter" data-message="{{ page.social-message }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-twitter"></i></a>
+
+	                    <a class="social-icon" href="#" data-platform="facebook" data-message="{{ page.social-message }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-facebook-official"></i></a>
+	                    <a class="social-icon" data-platform="mail"  href="mailto:{{ site.email }}?body={{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-envelope"></i></a>
+	                </div>
+	            </div>
+	        </div>
+	    </div><!-- end row -->
+	</div>
 </footer>
